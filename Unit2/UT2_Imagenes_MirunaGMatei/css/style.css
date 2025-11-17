@@ -1,0 +1,106 @@
+body {
+    background-image: url('../images/ac.jpg');
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+H1 {
+    background-color: lightgray;
+    color: black;
+}
+
+#contenedor {
+	width: 808px;
+}
+			
+#a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k, #l {
+	width: 120px;
+	height: 120px;
+	padding: 20px;
+	margin: 20px;
+	border: 1px solid black;
+	float: left;
+    background-color: white;
+}
+			
+* {
+	text-align: center;
+}
+
+
+
+/* -------------------------- PRIMERA FILA -------------------------- */
+
+#a {
+    background-image: url(../images/back_mantel.jpg);
+}
+
+#b {
+    background-image: url(../images/back_mantel.jpg);
+    background-position: center;
+    background-size: 8em;
+}
+
+#c {
+    background-image: url(../images/back_mantel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#d {
+    background-image: url(../images/back_mantel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8em;
+}
+
+
+
+/* -------------------------- SEGUNDA FILA -------------------------- */
+#e {
+    background-image: url(../images/dh.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    ;
+}
+
+#f {
+    background-image: url(../images/dh.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8em;
+}
+
+#g {
+    background-image: url(../images/dh_2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#h {
+    background-image: url(../images/dh_3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+/* -------------------------- TERCERA FILA -------------------------- */
+#i {
+    background: linear-gradient(to right, #a0d45a 50%, #436e0a 100%);
+}
+
+#j {
+    background: linear-gradient(to bottom, #d68779 60%, #8b4513 100%);
+}
+
+#k {
+    background: linear-gradient(to top, #448a15 20%, #ffffff 100%);
+}
+
+#l {
+    background: linear-gradient(to top, #436e0a 10%, transparent 100%);
+}

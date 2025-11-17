@@ -1,0 +1,101 @@
+/* ------------------------- GENERAL ------------------------- */
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Gabriela", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.infoP, .descrip {
+    font-family: sans-serif;
+}
+
+
+/* ------------------------- NARANJA ------------------------- */
+#luis, #ana{
+    background-color: #ff9900; /* Naranja/Mostaza claro (Fondo del div) */
+    border-color: #cc7a00; /* Naranja Oscuro (Borde) */
+}
+
+#luis h2, #ana h2{
+    background-color: #e68a00; /* Naranja medio (Fondo del h2) */
+    border-radius: 0 13px 0 0; 
+}
+
+#luis .descrip , #ana .descrip {
+    background-color: #ffb84d; /* Naranja Muy Claro (Fondo de la descripción) */
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+/* ------------------------- ROSA ------------------------- */
+#gabriel, #alfredo{
+    background-color: #ff50a7; /* Rosa (Fondo del div) */
+    border-color: #b30075; /* Rosa Oscuro (Borde) */
+}
+
+#gabriel h2, #alfredo h2 {
+    background-color: #e6008c; /* Rosa más oscuro (Fondo del h2) */
+    border-radius: 0 13px 0 0;
+}
+
+#gabriel .descrip, #alfredo .descrip {
+    background-color: #ff85c6; /* Rosa Muy Claro (Fondo de la descripción) */
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+/* ------------------------- DISEÑO DIVS CORREGIDO ------------------------- */
+
+#luis, #ana, #gabriel, #alfredo {
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 0 15px 15px 15px;
+    padding: 0;
+    margin: 15px;
+    overflow: hidden;
+}
+
+h2 {
+    margin: 0;
+    padding: 10px;
+    border-radius: 0 13px 0 0;
+}
+
+.descrip {
+    margin: 0;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* ------------------------- GENERAL ------------------------- */
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Gabriela", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.infoP, .descrip {
+    font-family: sans-serif;
+}

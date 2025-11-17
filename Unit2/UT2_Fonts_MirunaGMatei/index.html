@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algunos selectores</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<!-- Todos los textos del documento deben tener la fuente Verdana utiliza =>  font-family:Verdana; -->
+    <p class="header">Selectores etiqueta, id y clase</p>
+
+    <h1 class="title">Aplicando estilos con la clase title para que el texto sea azul</h1>
+    <h3 id="subtitle">Aplicando estilos con id subtitle para que el texto sea verde</h3>
+    <h4 class="title">Aplicando estilos con la clase title para que el texto sea azul</h4>
+    <h5>Aplicando estilos con etiqueta h5 para que el texto sea rojo</h5>
+    <h6>Aplicando estilos con etiqueta h6 para que el texto sea rojo</h6>
+
+    <p class="header">Selectores Atributo</p>
+    <a href="#">Ir a Google</a> <!-- El color del enlace tiene que ser verde -->
+    <a href="#">Ir a Microsoft</a> <!-- El color del enlace tiene que ser verde -->
+    <p class="text gray"> Aplicar estilos con la clase gray y a la clase text cuando la clase text aparece en la primera
+        posición</p>
+<!-- <p class="gray text"> Aplicar estilos con la clase gray y a la clase text cuando la clase gray aparece en la primera
+    posición</p> -->
+
+    <p class="header">Selectores Hermanos</p>
+
+<div>
+    <p class="primero">Este es el primer hermano</p>
+    <p class="segundo">Este es el segundo hermano con color rosa por ser hermano de primer hermano</p>
+    <p class="tercer">Este es el tercer hermano</p>
+</div>
+
+<div>
+    <h2 class="inicial">Este es el primer hermano sin formato</h2>
+    <h3>Este es el segundo hermano con color rosa por ser hermano de primer hermano</h3>
+    <p class="tercer">Este es el tercer hermano</p>
+    <h3>Este es el segundo hermano con color rosa por ser hermano de primer hermano</h3>
+    <p class="tercer">Este es el tercer hermano</p>
+</div>
+
+
+<p class="header">Selectores descendentes</p>
+
+<div class="descendente">
+    <p>Este es el primer hijo del div con la clase descendente de color coral </p>
+    <p>Este es el segundo hijo del div con la clase descendente de color coral </p>
+    <p>Este es el tercer hijo del div con la clase descendente de color coral </p>
+</div>
+
+
+<div class="directo">
+    <p>Este p es hijo directo del div con la clase directo de color magenta</p>
+        <div>
+        <p>Este p es hijo del div con la clase directo </p>
+        <p>Este p es hijo del div con la clase directo </p>
+        </div>
+    <p>Este p es hijo directo del div con la clase directo de color magenta</p>
+</div>
+</body>
+
+</html>

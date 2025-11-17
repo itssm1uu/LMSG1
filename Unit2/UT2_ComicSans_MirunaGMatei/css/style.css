@@ -1,0 +1,49 @@
+:root {
+h1:blue;
+}
+
+body {
+    background-color: rgb(126, 136, 158);
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-variant: small-caps;
+    font-family: monospace;
+}
+
+p {
+    text-indent: 3em;
+    text-align: justify;
+}
+
+.negrita {
+    color: rgb(255, 166, 0);
+    font-weight: bold;
+}
+
+.noNegrita {
+    color: rgb(255, 166, 0);
+}
+
+.tit {
+    color: red;
+    font-weight: bold;
+}
+
+.subrayado {
+    background-color: white;
+    color: green;
+    font-style: italic;
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+}
+

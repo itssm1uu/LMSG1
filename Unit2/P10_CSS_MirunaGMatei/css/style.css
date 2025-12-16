@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "Mothership";
+    src: url("../fuentes/Mothership.ttf");
+}
+
+@font-face {
+    font-family: "Modern-Vision";
+    src: url("../fuentes/Modern-Vision.ttf");
+}
+
+@font-face {
+    font-family: "Nemesia";
+    src: url(../fuentes/Nemesia-regular.ttf);
+}
+
+:root {
+    --fondo: rgb(228, 229, 230);
+    --fondo-caja: rgb(203, 212, 219);
+    --fondo-grados: rgb(192, 194, 194);
+    --pag: rgb(220, 220, 220);
+    --color-texto-principal: rgb(178, 191, 205);
+    --color-texto-barra: #333;
+    --sombra-texto: rgba(0, 0, 0, 0.6);
+    --fondo-grados-rgb: 255, 100, 0;
+
+    --num-slide: 4;
+    --slide-width: 100%;
+    --animation-time: 20s;
+}
+
+
+/* TODO */
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+
+/* CUERPO */
+body {
+    background-color: var(--fondo);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* HEADER */
+header {
+    text-transform: uppercase;
+    text-align: center;
+    background: url("../imagenes/encabezado.png") no-repeat center center;
+    background-size: cover;
+    color: var(--color-texto-principal);
+    margin: 0;
+    padding: 0;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5em; 
+    font-weight: normal; 
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px var(--sombra-texto); 
+    margin: 0;
+}
+
+
+
+/* ID CUERPO */
+#cuerpo {
+    background-color: var(--fondo-caja);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    padding-bottom: 2%;
+    padding-top: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#cuerpo nav {
+    display: flex;
+    gap: 20px;
+    background-color: var(--fondo-grados);
+    height: 40px;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+#cuerpo nav h3 {
+    font-weight: normal;
+    font-size: 0.9em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#cuerpo nav h3 a {
+    color: var(--color-texto-barra); 
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 5px;
+    transition: color 0.3s;
+}
+
+#cuerpo nav h3 a:hover {
+    color: #fff;
+}
+
+/* H1: Ciclos Formativos */
+header h1 a {
+    color: var(--color-texto-principal); 
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+/* FORMULARIO */
+form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.85em;
+    height: 100%;
+}
+
+form h4 {
+    margin: 0 5px 0 15px; 
+    font-weight: normal;
+    color: var(--color-texto-barra);
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 80px;
+    padding: 2px 5px;
+}
+
+form input[type="submit"] {
+    width: 25px;
+    padding: 2px 0;
+    margin-left: 5px;
+    background-color: #ddd;
+    border: 1px solid #888;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+/* H2; Introducción */
+h2 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.5em;
+    color: var(--color-texto-principal);
+    text-transform: uppercase;
+}
+
+
+
+/* Carrusel */
+.carrusel-contenedor {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.carrusel-track {
+    display: flex;
+    width: calc(var(--num-slides) * 2 * 100%); 
+    animation: deslizar-loop var(--animation-time) linear infinite;
+}
+
+.carrusel-contenedor img {
+    width: calc(100% / (var(--num-slides) * 2));
+    height: auto;
+    object-fit: cover; 
+}
+
+@keyframes deslizar-loop {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% / 2)); 
+    }
+}
+
+
+/* ASIDE */
+#aside {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    z-index: 10;
+    width: 40%; 
+    max-width: 350px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 0.85em;
+    line-height: 1.4;
+}
+
+#aside p {
+    text-align: justify; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* =================================================================
+ * CICLOS FORMATIVOS - Contenedor Principal
+ * =================================================================
+ */
+#ciclosFormativos {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    margin: 0 3rem; 
+    margin-top: 20px;
+    width: auto;
+}
+
+#SMR, #ASIR, #DAM {
+    width: 30%; 
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    margin: 0 1rem;
+    box-sizing: border-box;
+    display: flex;
+    padding: 15px; 
+}
+
+#SMR h2, #ASIR h2, #DAM h2 {
+    width: 30%;
+    text-align: left; 
+    font-size: 1.5em; 
+    font-weight: bold;
+    color: #555; 
+    margin: 0 10px 0 0;
+    padding-bottom: 0;
+}
+
+#SMR p, #ASIR p, #DAM p {
+    width: 70%; 
+    background-color: rgb(255, 255, 255); 
+    color: #000000; 
+    padding: 10px;
+    margin-top: 15px; 
+    font-size: 0.9em;
+    line-height: 1.6;
+}

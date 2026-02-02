@@ -38,6 +38,20 @@ nav {
     justify-content: space-evenly;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;       
+    margin: 0;        
+    display: flex;   
+    width: 100%;    
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
 nav a:hover {
     color: var(--primary-color); 
 }
